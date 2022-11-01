@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex-grow: 1;
+  background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.activity-form {
+  padding: 2em;
+}
+
+.activity-log {
+  border-left: 1px solid white;
+  padding: 2em;
+}
